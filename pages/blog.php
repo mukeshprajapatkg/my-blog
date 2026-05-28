@@ -22,7 +22,7 @@ $result = mysqli_query($conn, $query);
 
                 <div class="blog-card">
 
-                    <h1><a href="<?= BASE_URL ?>pages/details_page.php?slug=<?= $row['slug'] ?>"><?= substr($row['title'], 0, 50) ?>...</a></h1>
+                    <h1><a href="<?= BASE_URL ?>pages/details_page.php?slug=<?= $row['slug'] ?>"><?= substr($row['title'], 0, 27) ?>...</a></h1>
                     <p><?= substr($row['description'], 0, 100) ?>...</p>
                     <img
                         src="<?= BASE_URL ?>assets/images/<?= $row['image'] ?>"
