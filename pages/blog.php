@@ -12,7 +12,7 @@ $result = mysqli_query($conn, $query);
 
 ?>
 
-<section class="blog-section">
+<section class="blog-sectionff">
 
     <div class="container">
 
