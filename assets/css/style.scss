@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #1870D5;
+    --secondary-color: #0A53A8;
+    --link-color: #3b5998;
+    --link-hover-color: #4d4d4d;
+    --title-color: #2e2e2e;
+    --text-color: #4d4d4d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .menu {
+        ul {
+            display: flex;
+            gap: 20px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: var(--link-color);
+                    font-size: 16px;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: var(--link-hover-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+
+    .blog {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+
+        .blog-card {
+            width: 50%;
+            padding: 20px;
+            box-shadow: 2px 2px 4px 4px gainsboro;
+
+            a {
+                text-decoration: none;
+                color: var(--link-color);
+
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--link-hover-color);
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        color: var(--title-color);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: var(--text-color);
+        margin-bottom: 30px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    padding: 50px 0 20px;
+    background-color: #394048;
+    text-align: center;
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
